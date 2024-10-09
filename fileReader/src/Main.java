@@ -29,7 +29,7 @@ public class Main {
     public static ArrayList<String> getStopWords() throws Exception{
         // File path is passed as parameter
         File file = new File(
-                "C:\\Users\\ryanw\\IdeaProjects\\untitled\\src\\stopwords.txt");
+                "fileReader/src/stopwords.txt");
 
         // Note:  Double backquote is to avoid compiler
         // interpret words
