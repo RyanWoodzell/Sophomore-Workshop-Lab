@@ -23,6 +23,7 @@ public class Main {
         //basicStatistics(readFile(), removeStopWords(stopWords, textWords), uniqueWords(removeStopWords(stopWords, textWords)));
         String[] finalWords = listToArray(removedWords);
         countFreq(finalWords, finalWords.length);
+        System.out.print("hello");
     }
 
     public static ArrayList<String> getStopWords() throws Exception{
