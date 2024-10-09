@@ -15,7 +15,14 @@ public class Main {
     public static void main(String[] args) throws Exception {
         ArrayList<String> stopWords = getStopWords();
         readFile a = new readFile();
-        ArrayList<String> textWords = a.readInstanceFile("fileReader/src/Hello World.txt");
+        //ArrayList<String> textWords = a.readInstanceFile("fileReader/src/Hello World.txt");
+        ArrayList<String> electionarticle1 = a.readInstanceFile("fileReader/src/Topic1Election/electionArticle1.txt");
+        ArrayList<String> electionarticle2 = a.readInstanceFile("fileReader/src/Topic1Election/electionArticle2.txt");
+        ArrayList<String> electionarticle3 = a.readInstanceFile("fileReader/src/Topic1Election/electionArticle3.txt");
+        ArrayList<String> olympicsarticle1 = a.readInstanceFile("fileReader/src/Topic2Olympics/OlympicArticle1.txt");
+        ArrayList<String> olympicsarticle2 = a.readInstanceFile("fileReader/src/Topic2Olympics/OlympicArticle2.txt");
+        ArrayList<String> olympicsarticle3 = a.readInstanceFile("fileReader/src/Topic2Olympics/OlympicArticle3.txt");
+
         ArrayList<String> removedWords = a.removeStopWords();
         //frequencies(removedWords);
         //int uniqueW = uniqueWords(textWords);
