@@ -14,7 +14,8 @@ public class Main {
     // Main driver method
     public static void main(String[] args) throws Exception {
         ArrayList<String> stopWords = getStopWords();
-        ArrayList<String> textWords = readFile();
+        readFile a = new readFile();
+        ArrayList<String> textWords = a.readInstanceFile("fileReader/src/Hello World.txt");
         ArrayList<String> removedWords = removeStopWords(stopWords, textWords);
         //frequencies(removedWords);
         //int uniqueW = uniqueWords(textWords);
@@ -48,11 +49,11 @@ public class Main {
         }
         return stopWordsList;
     }
-    public static ArrayList<String> readFile() throws Exception{
+    /*public static ArrayList<String> readFile(String filePath) throws Exception{
         // Passing the path to the file as a parameter
         FileReader fr = new FileReader(
-                "C:\\Users\\ryanw\\IdeaProjects\\untitled\\src\\Hello World.txt");
-
+                //"C:\\Users\\ryanw\\IdeaProjects\\untitled\\src\\Hello World.txt");
+                filePath);
         // Declaring loop variable
         int i;
         ArrayList<Character> cars = new ArrayList<Character>();
@@ -81,7 +82,7 @@ public class Main {
             }
         }
         return words;
-    }
+    }*/
     public static ArrayList<String> removeStopWords(ArrayList<String> stopWords, ArrayList<String> words){
         for (int i = 0; i < stopWords.size(); i++) {
             for (int j=0; j< words.size(); j++){
