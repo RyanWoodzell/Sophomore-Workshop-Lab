@@ -109,6 +109,9 @@ public class readFile {
         //update stopWordsList
         this.stopWords=stopWordsList;
     }
+
+    //remove the stop words from read file
+
     public void removeStopWords() throws Exception {
 
         //obtain stop words from stop word txt file that will be compared.
@@ -124,6 +127,9 @@ public class readFile {
         }
 
     }
+
+    //getStopWordFile
+
     public ArrayList<String> getStopWords(){
         return stopWords;
     }
