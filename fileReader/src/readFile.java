@@ -1,5 +1,7 @@
 package fileReader.src;
 
+import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
 
@@ -37,5 +39,29 @@ public class readFile {
             }
         }
         return words;
+    }
+    public static ArrayList<String> getStopWords() throws Exception{
+        // File path is passed as parameter
+        File file = new File(
+                "fileReader/src/stopwords.txt");
+
+        // Note:  Double backquote is to avoid compiler
+        // interpret words
+        // like \test as \t (ie. as a escape sequence)
+
+        // Creating an object of BufferedReader class
+        BufferedReader br
+                = new BufferedReader(new FileReader(file));
+
+        // Declaring a string variable
+        String st;
+        ArrayList<String> stopWordsList= new ArrayList<String>();
+        // Condition holds true till
+        // there is character in a string
+        while ((st = br.readLine()) != null) {
+            // Place String Into Array List
+            stopWordsList.add(st);
+        }
+        return stopWordsList;
     }
 }
