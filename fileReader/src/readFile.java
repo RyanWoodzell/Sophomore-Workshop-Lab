@@ -8,6 +8,7 @@ import java.util.ArrayList;
 public class readFile {
     ArrayList<String> file;
     ArrayList<String> stopWords;
+    ArrayList<String> cleanedFile;
     public ArrayList<String> readInstanceFile(String filePath) throws Exception{
         // Passing the path to the file as a parameter
         FileReader fr = new FileReader(
@@ -43,7 +44,7 @@ public class readFile {
         this.file=words;
         return words;
     }
-    public void getStopWords() throws Exception{
+    public void getStopWordsFromFile() throws Exception{
         // File path is passed as parameter
         File file = new File(
                 "fileReader/src/stopwords.txt");
@@ -68,7 +69,7 @@ public class readFile {
         this.stopWords=stopWordsList;
     }
     public ArrayList<String> removeStopWords() throws Exception {
-        getStopWords();
+        getStopWordsFromFile();
         for (int i = 0; i < stopWords.size(); i++) {
             for (int j=0; j< file.size(); j++){
                 if (stopWords.get(i).equals(file.get(j))){
@@ -77,6 +78,17 @@ public class readFile {
             }
         }
         //System.out.println(file);
+        this.cleanedFile=file;
         return file;
+    }
+    public ArrayList<String> getStopWords(){
+        return stopWords;
+    }
+
+    public ArrayList<String> getFile() {
+        return file;
+    }
+    public ArrayList<String> getCleanedFile(){
+        return cleanedFile;
     }
 }
