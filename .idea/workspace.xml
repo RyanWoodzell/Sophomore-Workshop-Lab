@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f56bc058-8e14-43dc-a2a0-a9979b047e0f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileReader/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileReader/src/readFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader/src/readFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/readFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/readFile.class" afterDir="false" />
-    </list>
+    <list default="true" id="f56bc058-8e14-43dc-a2a0-a9979b047e0f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,7 +69,6 @@
       <workItem from="1728418645841" duration="1731000" />
       <workItem from="1728425835091" duration="7000" />
       <workItem from="1728486224316" duration="1590000" />
-      <workItem from="1728488307364" duration="1265000" />
     </task>
     <servers />
   </component>
