@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f56bc058-8e14-43dc-a2a0-a9979b047e0f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/fileReader/src/fileReader1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fileReader1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SophomoreWorkshopLab.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SophomoreWorkshopLab.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/out/production/untitled/GFG$Frequencies.class" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader/out/production/untitled/GFG$Frequencies.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/out/production/untitled/GFG.class" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader/out/production/untitled/GFG.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/out/production/untitled/Hello World.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader/out/production/untitled/Hello World.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/out/production/untitled/stopwords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader/out/production/untitled/stopwords.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/GFG.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader/src/GFG.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/Hello World.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader/src/Hello World.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/stopwords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader/src/stopwords.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/untitled.iml" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader/untitled.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/GFG.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/GFG.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/GFG.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,20 +33,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.GFG.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.GFG.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -72,7 +64,9 @@
       <option name="presentableId" value="Default" />
       <updated>1728418184975</updated>
       <workItem from="1728418186854" duration="3000" />
-      <workItem from="1728418645841" duration="1677000" />
+      <workItem from="1728418645841" duration="1731000" />
+      <workItem from="1728425835091" duration="7000" />
+      <workItem from="1728486224316" duration="371000" />
     </task>
     <servers />
   </component>

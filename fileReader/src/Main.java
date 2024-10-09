@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 // Main class
 // ReadingFromFile
-public class GFG {
+public class Main {
 
     // Main driver method
     public static void main(String[] args) throws Exception {
@@ -19,7 +19,7 @@ public class GFG {
         //frequencies(removedWords);
         //int uniqueW = uniqueWords(textWords);
         //System.out.println(uniqueW);
-        //basicstatistics(readFile(), removeStopWords(stopWords, textWords), uniqueWords(removeStopWords(stopWords, textWords)));
+        //basicStatistics(readFile(), removeStopWords(stopWords, textWords), uniqueWords(removeStopWords(stopWords, textWords)));
         String[] finalWords = listToArray(removedWords);
         countFreq(finalWords, finalWords.length);
     }
@@ -123,10 +123,11 @@ public class GFG {
                     count++;
                 }
             }
+            //print out
             System.out.println(arr[i] + " " + count);
         }
     }
-    public static void basicstatistics(ArrayList<String> withstopwords, ArrayList<String> withoutstopwords, int unqiuewords){
+    public static void basicStatistics(ArrayList<String> withstopwords, ArrayList<String> withoutstopwords, int unqiuewords){
         System.out.println("The number of words in the article before removing stopwords is " + withstopwords.size());
         System.out.println("The number of words in the article after removing stopwords is "+ withoutstopwords.size());
         System.out.println("The number of unique words in the article is " + unqiuewords);
