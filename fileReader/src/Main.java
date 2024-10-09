@@ -16,7 +16,7 @@ public class Main {
         ArrayList<String> stopWords = getStopWords();
         readFile a = new readFile();
         ArrayList<String> textWords = a.readInstanceFile("fileReader/src/Hello World.txt");
-        ArrayList<String> removedWords = removeStopWords(stopWords, textWords);
+        ArrayList<String> removedWords = a.removeStopWords();
         //frequencies(removedWords);
         //int uniqueW = uniqueWords(textWords);
         //System.out.println(uniqueW);

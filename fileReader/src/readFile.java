@@ -6,7 +6,9 @@ import java.io.FileReader;
 import java.util.ArrayList;
 
 public class readFile {
-    public static ArrayList<String> readInstanceFile(String filePath) throws Exception{
+    ArrayList<String> file;
+    ArrayList<String> stopWords;
+    public ArrayList<String> readInstanceFile(String filePath) throws Exception{
         // Passing the path to the file as a parameter
         FileReader fr = new FileReader(
                 //"C:\\Users\\ryanw\\IdeaProjects\\untitled\\src\\Hello World.txt");
@@ -38,9 +40,10 @@ public class readFile {
 
             }
         }
+        this.file=words;
         return words;
     }
-    public static ArrayList<String> getStopWords() throws Exception{
+    public void getStopWords() throws Exception{
         // File path is passed as parameter
         File file = new File(
                 "fileReader/src/stopwords.txt");
@@ -62,6 +65,18 @@ public class readFile {
             // Place String Into Array List
             stopWordsList.add(st);
         }
-        return stopWordsList;
+        this.stopWords=stopWordsList;
+    }
+    public ArrayList<String> removeStopWords() throws Exception {
+        getStopWords();
+        for (int i = 0; i < stopWords.size(); i++) {
+            for (int j=0; j< file.size(); j++){
+                if (stopWords.get(i).equals(file.get(j))){
+                    file.remove(j);
+                }
+            }
+        }
+        //System.out.println(file);
+        return file;
     }
 }
