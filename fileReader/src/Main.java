@@ -23,7 +23,8 @@ public class Main {
         //basicStatistics(readFile(), removeStopWords(stopWords, textWords), uniqueWords(removeStopWords(stopWords, textWords)));
         String[] finalWords = listToArray(removedWords);
         countFreq(finalWords, finalWords.length);
-        //basicStatistics b = new basicStatistics();
+        basicStatistics b = new basicStatistics(a.getFile(), a.getCleanedFile());
+        b.readStatistics();
 
     }
 
