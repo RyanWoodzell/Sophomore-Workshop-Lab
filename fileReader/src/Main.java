@@ -23,7 +23,8 @@ public class Main {
         //basicStatistics(readFile(), removeStopWords(stopWords, textWords), uniqueWords(removeStopWords(stopWords, textWords)));
         String[] finalWords = listToArray(removedWords);
         countFreq(finalWords, finalWords.length);
-        System.out.print("hello");
+        //basicStatistics b = new basicStatistics();
+
     }
 
     public static ArrayList<String> getStopWords() throws Exception{
@@ -128,12 +129,6 @@ public class Main {
             //print out
             System.out.println(arr[i] + " " + count);
         }
-    }
-    public static void basicStatistics(ArrayList<String> withstopwords, ArrayList<String> withoutstopwords, int unqiuewords){
-        System.out.println("The number of words in the article before removing stopwords is " + withstopwords.size());
-        System.out.println("The number of words in the article after removing stopwords is "+ withoutstopwords.size());
-        System.out.println("The number of unique words in the article is " + unqiuewords);
-
     }
     public static String[] listToArray(ArrayList<String> words){
         String[] str = new String[words.size()];
