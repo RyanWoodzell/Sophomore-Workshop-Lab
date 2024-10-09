@@ -26,6 +26,7 @@ public class Main {
 
         ArrayList<String> electionArticle1= a.readAndClean("fileReader/src/Topic1Election/electionArticle1.txt");
         basicStatistics z = new basicStatistics(a.getFile(), a.getCleanedFile());
+        System.out.println(a.getCleanedFile());
         z.readStatistics();
         /*ArrayList<String> electionarticle1 = a.readInstanceFile("fileReader/src/Topic1Election/electionArticle1.txt");
         ArrayList<String> electionarticle2 = b.readInstanceFile("fileReader/src/Topic1Election/electionArticle2.txt");

@@ -13,14 +13,17 @@ public class readFile {
     ArrayList<String> stopWords = new ArrayList<>();
     ArrayList<String> cleanedFile = new ArrayList<>();
 
-    //Read file requested based on directed file path
+    //Use methods to read and clean text file
+
     public ArrayList<String> readAndClean(String filePath) throws Exception{
         readInstanceFile(filePath);
         removeStopWords();
         return cleanedFile;
 
-
     }
+
+    //Read file requested based on directed file path
+
     public void readInstanceFile(String filePath) throws Exception{
 
         // Passing the path to the file as a parameter
@@ -66,7 +69,6 @@ public class readFile {
             }else{
                 //Adds the characters to make a String
                 word = word + c;
-                //Might need to add string builder here. Numbers
 
             }
         }
@@ -76,12 +78,14 @@ public class readFile {
         this.file= words;
         cleanedFile = words;
 
-        //return words;
     }
+
+    //get the stopwords from txt file
+
     public void getStopWordsFromFile() throws Exception{
+
         // File path is passed as parameter
-        File file = new File(
-                "fileReader/src/stopwords.txt");
+        File file = new File("fileReader/src/stopwords.txt");
 
         // Note:  Double backquote is to avoid compiler
         // interpret words
@@ -93,6 +97,7 @@ public class readFile {
 
         // Declaring a string variable
         String st;
+
         ArrayList<String> stopWordsList= new ArrayList<String>();
         // Condition holds true till
         // there is character in a string
@@ -100,11 +105,19 @@ public class readFile {
             // Place String Into Array List
             stopWordsList.add(st);
         }
+
+        //update stopWordsList
         this.stopWords=stopWordsList;
     }
     public void removeStopWords() throws Exception {
+
+        //obtain stop words from stop word txt file that will be compared.
         getStopWordsFromFile();
+
+        //clone the original ArrayList
         this.cleanedFile=(ArrayList<String>) file.clone();
+
+        //Traverse through stop words list. If any element in cleanedfile is a stop word, it will be removed.
         for (int j = 0; j<this.stopWords.size(); j++) {
             cleanedFile.remove(stopWords.get(j));
 
@@ -114,6 +127,9 @@ public class readFile {
     public ArrayList<String> getStopWords(){
         return stopWords;
     }
+
+    //getter methods
+
     public ArrayList<String> getFile() {
         return file;
     }
