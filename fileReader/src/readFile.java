@@ -99,13 +99,11 @@ public class readFile {
 
     }
 
-    //getStopWordFile
+    //getter methods
 
     public ArrayList<String> getStopWords(){
         return stopWords;
     }
-
-    //getter methods
 
     public ArrayList<String> getFile() {
         return file;

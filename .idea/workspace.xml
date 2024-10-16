@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f56bc058-8e14-43dc-a2a0-a9979b047e0f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileReader/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fileReader/src/basicStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader/src/basicStatistics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileReader/src/stopwords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader/src/stopwords.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/basicStatistics.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/basicStatistics.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/readFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader/src/readFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -5,8 +5,6 @@ public class basicStatistics {
     ArrayList<String> withStopWords;
     ArrayList<String> withoutStopWords;
     int uniquewords;
-    String[] cleanedArray;
-    int[] cleanedArrayIndex;
     Map<String, Integer> stringCountMap = new HashMap<>();
     ArrayList<String> words = new ArrayList<>();
     ArrayList<Integer> ranking = new ArrayList<>();
