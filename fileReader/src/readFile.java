@@ -92,8 +92,10 @@ public class readFile {
         this.cleanedFile=(ArrayList<String>) file.clone();
 
         //Traverse through stop words list. If any element in cleanedfile is a stop word, it will be removed.
-        for (int j = 0; j<this.stopWords.size(); j++) {
-            cleanedFile.remove(stopWords.get(j));
+        for (String stopWord : this.stopWords) {
+            for (int i = 0; i < this.cleanedFile.size(); i++) {
+                cleanedFile.remove(stopWord);
+            }
 
         }
 
