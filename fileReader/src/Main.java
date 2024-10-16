@@ -35,66 +35,19 @@ public class Main {
         //Gather Basic Statistics from each file
 
         basicStatistics E1 = new basicStatistics(a.getFile(), a.getCleanedFile());
-        /*basicStatistics E2 = new basicStatistics(b.getFile(), b.getCleanedFile());
+        basicStatistics E2 = new basicStatistics(b.getFile(), b.getCleanedFile());
         basicStatistics E3 = new basicStatistics(c.getFile(), c.getCleanedFile());
-        basicStatistics O4 = new basicStatistics(d.getFile(), d.getCleanedFile());
-        basicStatistics O5 = new basicStatistics(e.getFile(), e.getCleanedFile());
-        basicStatistics O6 = new basicStatistics(f.getFile(), f.getCleanedFile());
-        */
+        basicStatistics O1 = new basicStatistics(d.getFile(), d.getCleanedFile());
+        basicStatistics O2 = new basicStatistics(e.getFile(), e.getCleanedFile());
+        basicStatistics O3 = new basicStatistics(f.getFile(), f.getCleanedFile());
+
+        //output statistics to the user.
         E1.readStatistics();
-
-        /*
-
-
-        //Read and clean imported files
-
-        //frequencies(removedWords);
-        //int uniqueW = uniqueWords(textWords);
-        //System.out.println(uniqueW);
-        //basicStatistics(readFile(), removeStopWords(stopWords, textWords), uniqueWords(removeStopWords(stopWords, textWords)));
-        String[] finalWords = listToArray(removedWords);
-        countFreq(finalWords, finalWords.length);
-        basicStatistics z = new basicStatistics(a.getFile(), a.getCleanedFile());
-        z.readStatistics();
-
-         */
+        E2.readStatistics();
+        E3.readStatistics();
+        O1.readStatistics();
+        O2.readStatistics();
+        O3.readStatistics();
 
     }}
 
-    /*
-    public static void countFreq(String arr[], int n) {
-        boolean visited[] = new boolean[n];
-
-        Arrays.fill(visited, false);
-
-        // Traverse through array elements and
-        // count frequencies
-        for (int i = 0; i < n; i++) {
-
-            // Skip this element if already processed
-            if (visited[i] == true)
-                continue;
-
-            // Count frequency
-            int count = 1;
-            for (int j = i + 1; j < n; j++) {
-                if (arr[i].equalsIgnoreCase(arr[j])){
-                    visited[j] = true;
-                    count++;
-                }
-            }
-            //print out
-            System.out.println(arr[i] + " " + count);
-        }
-    }
-    public static String[] listToArray(ArrayList<String> words){
-        String[] str = new String[words.size()];
-
-        for (int i = 0; i < words.size(); i++) {
-            str[i] = words.get(i);
-        }
-        return(str);
-
-    }
-    }
-*/

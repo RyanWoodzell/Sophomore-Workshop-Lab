@@ -8,6 +8,8 @@ public class basicStatistics {
     String[] cleanedArray;
     int[] cleanedArrayIndex;
     Map<String, Integer> stringCountMap = new HashMap<>();
+    ArrayList<String> words = new ArrayList<>();
+    ArrayList<Integer> ranking = new ArrayList<>();
 
     //Constructor for statistics reader
 
@@ -15,17 +17,10 @@ public class basicStatistics {
 
         this.withStopWords = withStopWords;
         this.withoutStopWords = withoutStopWords;
-        //countFreq(listToArray(withoutStopWords), withoutStopWords.size());
-        //frequencyCounters(cleanedArray);
-
-        /*for (int i = 0; i < cleanedArray.length; i++) {
-            System.out.println(cleanedArrayIndex[i]);
-            System.out.println(cleanedArray[i]);
-        }*/
         countStringOccurrences(listToArray(withoutStopWords));
-        for (Map.Entry<String, Integer> entry : stringCountMap.entrySet()) {
+        /*for (Map.Entry<String, Integer> entry : stringCountMap.entrySet()) {
             System.out.println(entry.getKey() + ": " + entry.getValue());
-        }
+        }*/
     }
 
     //Print out the basicStatistics of the file
@@ -35,6 +30,10 @@ public class basicStatistics {
         System.out.println("The number of words in the article after removing stopwords is " + withoutStopWords.size());
         uniqueWords(withoutStopWords);
         System.out.println("The number of unique words in the article is " + uniquewords);
+        System.out.println("Word Ranking by Frequency:");
+        for (int i = 0; i < words.size(); i++) {
+            System.out.println(words.get(i) + ": " + ranking.get(i));
+        }
     }
 
     //Count the unique words of file
@@ -51,47 +50,6 @@ public class basicStatistics {
     //Count how many words repeat.
     //Takes in array of words and length of array
     //need to debug countFreq
-    public  void countFreq(String[] arr, int n) {
-        boolean[] visited = new boolean[n];
-        int[] Freq = new int[n];
-
-        Arrays.fill(visited, false);
-
-        // Traverse through array elements and
-        // count frequencies
-
-        for (int i = 0; i < n; i++) {
-
-            // Skip this element if already processed
-
-            if (visited[i])
-                continue;
-
-            // Count frequency
-
-            int count = 1;
-
-            for (int j = 0; j < n; j++) {
-                if (arr[i].equalsIgnoreCase(arr[j])){
-                    visited[j] = true;
-                    count++;
-                }
-
-                //Add count to indexArray, which records how many instances of a certain string
-                Freq[j] = count;
-            }
-
-        }
-
-
-        //create cleanedArray
-
-        this.cleanedArray = arr;
-        this.cleanedArrayIndex = Freq;
-
-        //Sort the arrays by frequency they occur in article.
-        bubbleSort(cleanedArray.length);
-    }
 
     //Convert the arrayList to a string array for the frequency counter
 
@@ -107,52 +65,8 @@ public class basicStatistics {
 
     //bubble sort the arrays in countFreq
 
-    public void bubbleSort(int n) {
-        int i, j, temp;
-        String temp2;
-        boolean swapped;
-        for (i = 0; i < n - 1; i++) {
-            swapped = false;
-            for (j = 0; j < n - i - 1; j++) {
-                if (cleanedArrayIndex[j] > cleanedArrayIndex[j + 1]) {
 
-                    // Swap cleanedArrayIndex[j] and cleanedArrayIndex[j+1]
 
-                    temp = cleanedArrayIndex[j];
-                    cleanedArrayIndex[j] = cleanedArrayIndex[j + 1];
-                    cleanedArrayIndex[j + 1] = temp;
-                    swapped = true;
-
-                    //Swap cleanedArray[j] and cleanedArray[j+1
-
-                    temp2 = cleanedArray[j];
-                    cleanedArray[j] = cleanedArray[j + 1];
-                    cleanedArray[j + 1] = temp2;
-
-                }
-            }
-
-            // If no two elements were
-            // swapped by inner loop, then break
-            if (swapped == false)
-                break;
-        }
-    }
-   /* public void frequencyCounters(String[] arr){
-        Map<String,Integer> map = new HashMap<String,Integer>();
-        for(String str: arr){
-            Integer count = map.get(str);
-            if(count==null){
-                map.put(str,1);
-            }else{
-                map.put(str,++count);
-            }
-        }
-        Set<String> keySet = map.keySet();
-        for(String key: keySet){
-            System.out.println(STR."\{key}:\{map.get(key)}");
-        }
-    }*/
    public void  countStringOccurrences(String[] arr) {
        // HashMap to store the string as key and its occurrence count as value
        //Map<String, Integer> stringCountMap = new HashMap<>();
@@ -167,6 +81,27 @@ public class basicStatistics {
                stringCountMap.put(str, 1);
            }
        }
+       // Store words and counts in respective ArrayLists
+       for (Map.Entry<String, Integer> entry : stringCountMap.entrySet()) {
+           words.add(entry.getKey());
+           ranking.add(entry.getValue());
+       }
+       for (int i = 0; i < ranking.size() - 1; i++) {
+           for (int j = 0; j < ranking.size() - i - 1; j++) {
+               if (ranking.get(j) < ranking.get(j + 1)) {
+                   // Swap counts
+                   int tempCount = ranking.get(j);
+                   ranking.set(j, ranking.get(j + 1));
+                   ranking.set(j + 1, tempCount);
+
+                   // Swap corresponding words
+                   String tempWord = words.get(j);
+                   words.set(j, words.get(j + 1));
+                   words.set(j + 1, tempWord);
+               }
+           }
+       }
+
 
    }
 }
