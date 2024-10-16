@@ -46,7 +46,7 @@ Our basicStatistics Class analyzes the words from the articles and provides stat
 
 ## UML
 
-umlDiagram.png
+![alt text](umlDiagram.png)
 
 
 
