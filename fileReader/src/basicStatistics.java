@@ -1,9 +1,5 @@
 package fileReader.src;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class basicStatistics {
     ArrayList<String> withStopWords;
@@ -11,6 +7,7 @@ public class basicStatistics {
     int uniquewords;
     String[] cleanedArray;
     int[] cleanedArrayIndex;
+    Map<String, Integer> stringCountMap = new HashMap<>();
 
     //Constructor for statistics reader
 
@@ -18,10 +15,16 @@ public class basicStatistics {
 
         this.withStopWords = withStopWords;
         this.withoutStopWords = withoutStopWords;
-        countFreq(listToArray(withoutStopWords), withoutStopWords.size());
-        for (int i = 0; i < cleanedArray.length; i++) {
+        //countFreq(listToArray(withoutStopWords), withoutStopWords.size());
+        //frequencyCounters(cleanedArray);
+
+        /*for (int i = 0; i < cleanedArray.length; i++) {
             System.out.println(cleanedArrayIndex[i]);
             System.out.println(cleanedArray[i]);
+        }*/
+        countStringOccurrences(listToArray(withoutStopWords));
+        for (Map.Entry<String, Integer> entry : stringCountMap.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
         }
     }
 
@@ -135,4 +138,35 @@ public class basicStatistics {
                 break;
         }
     }
+   /* public void frequencyCounters(String[] arr){
+        Map<String,Integer> map = new HashMap<String,Integer>();
+        for(String str: arr){
+            Integer count = map.get(str);
+            if(count==null){
+                map.put(str,1);
+            }else{
+                map.put(str,++count);
+            }
+        }
+        Set<String> keySet = map.keySet();
+        for(String key: keySet){
+            System.out.println(STR."\{key}:\{map.get(key)}");
+        }
+    }*/
+   public void  countStringOccurrences(String[] arr) {
+       // HashMap to store the string as key and its occurrence count as value
+       //Map<String, Integer> stringCountMap = new HashMap<>();
+
+       // Loop through the array
+       for (String str : arr) {
+           // If the string is already in the map, increment its count
+           if (stringCountMap.containsKey(str)) {
+               stringCountMap.put(str, stringCountMap.get(str) + 1);
+           } else {
+               // Otherwise, add it to the map with an initial count of 1
+               stringCountMap.put(str, 1);
+           }
+       }
+
+   }
 }

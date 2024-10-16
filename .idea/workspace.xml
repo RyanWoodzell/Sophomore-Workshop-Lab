@@ -6,10 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f56bc058-8e14-43dc-a2a0-a9979b047e0f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileReader/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fileReader/src/basicStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader/src/basicStatistics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/readFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/readFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/basicStatistics.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/basicStatistics.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +80,10 @@
       <workItem from="1728492638865" duration="3171000" />
       <workItem from="1728496512675" duration="250000" />
       <workItem from="1728496773875" duration="939000" />
+      <workItem from="1728577367065" duration="151000" />
+      <workItem from="1728577818681" duration="9000" />
+      <workItem from="1729029648906" duration="1299000" />
+      <workItem from="1729031710651" duration="799000" />
     </task>
     <servers />
   </component>
