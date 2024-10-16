@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
+import java.lang.StringBuilder;
 
 public class readFile {
 
@@ -27,57 +28,27 @@ public class readFile {
     public void readInstanceFile(String filePath) throws Exception{
 
         // Passing the path to the file as a parameter
-
         FileReader fr = new FileReader(filePath);
+        BufferedReader br = new BufferedReader(fr);
+        StringBuilder stringBuilder = new StringBuilder();
+        String line;
 
-        // Declaring loop variable
-
-        int i;
-
-        ArrayList<Character> chars = new ArrayList<Character>();
-        ArrayList<String> words = new ArrayList<String>();
-        ArrayList<Character> stopWordsChars = new ArrayList<Character>();
-        String word = "";
-
-        // Holds true till there is nothing to read
-
-        while ((i = fr.read()) != -1){
-
-            chars.add((char)i);
+        while ((line = br.readLine()) != null){
+            String cleanedLine = line.replaceAll("[^\\sa-zA-Z0-9]", "");
+            stringBuilder.append(cleanedLine).append(" ");
         }
 
-        //adds a space so the reader will know to seperate the final word
+        String[] wordsArray=stringBuilder.toString().split("\\s+");
 
-        chars.add(' ');
-
-        //Grammar Exclusion
-
-        for(char c: chars){
-            if ((c == ' ')||(c =='.')||(c==',')||(c==':')||(c=='?')||(c=='!')||(c==';')){
-
-                if ((c =='.')||(c==',')||(c==':')||(c=='?')||(c=='!')||(c==';')){
-                    //skip the punctuation
-                    continue;
-                }
-
-                else {
-                    //Adds the combined characters into the words ArrayList
-                    words.add(word);
-                    word = "";
-                }
-
-            }else{
-                //Adds the characters to make a String
-                word = word + c;
-
+        ArrayList<String> words = new ArrayList<>();
+        for (String word : wordsArray) {
+            if (!word.isEmpty()) {
+                words.add(word.toLowerCase());
             }
         }
 
-        //set fields
-
-        this.file= words;
-        cleanedFile = words;
-
+        this.file = words;
+        cleanedFile = new ArrayList<>(words);
     }
 
     //get the stopwords from txt file
