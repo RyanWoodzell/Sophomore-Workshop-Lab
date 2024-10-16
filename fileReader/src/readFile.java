@@ -6,48 +6,86 @@ import java.io.FileReader;
 import java.util.ArrayList;
 
 public class readFile {
-    ArrayList<String> file;
-    ArrayList<String> stopWords;
-    ArrayList<String> cleanedFile;
-    public ArrayList<String> readInstanceFile(String filePath) throws Exception{
+
+    //Establish necessary fields
+
+    ArrayList<String> file = new ArrayList<>();
+    ArrayList<String> stopWords = new ArrayList<>();
+    ArrayList<String> cleanedFile = new ArrayList<>();
+
+    //Use methods to read and clean text file
+
+    public ArrayList<String> readAndClean(String filePath) throws Exception{
+        readInstanceFile(filePath);
+        removeStopWords();
+        return cleanedFile;
+
+    }
+
+    //Read file requested based on directed file path
+
+    public void readInstanceFile(String filePath) throws Exception{
+
         // Passing the path to the file as a parameter
-        FileReader fr = new FileReader(
-                //"C:\\Users\\ryanw\\IdeaProjects\\untitled\\src\\Hello World.txt");
-                filePath);
+
+        FileReader fr = new FileReader(filePath);
+
         // Declaring loop variable
+
         int i;
-        ArrayList<Character> cars = new ArrayList<Character>();
+
+        ArrayList<Character> chars = new ArrayList<Character>();
         ArrayList<String> words = new ArrayList<String>();
         ArrayList<Character> stopWordsChars = new ArrayList<Character>();
         String word = "";
+
         // Holds true till there is nothing to read
+
         while ((i = fr.read()) != -1){
 
-            cars.add((char)i);
-            //System.out.print((char)i);
+            chars.add((char)i);
         }
-        cars.add(' ');
-        for(char c: cars){
+
+        //adds a space so the reader will know to seperate the final word
+
+        chars.add(' ');
+
+        //Grammar Exclusion
+
+        for(char c: chars){
             if ((c == ' ')||(c =='.')||(c==',')||(c==':')||(c=='?')||(c=='!')||(c==';')){
+
                 if ((c =='.')||(c==',')||(c==':')||(c=='?')||(c=='!')||(c==';')){
+                    //skip the punctuation
                     continue;
                 }
+
                 else {
+                    //Adds the combined characters into the words ArrayList
                     words.add(word);
                     word = "";
                 }
+
             }else{
+                //Adds the characters to make a String
                 word = word + c;
 
             }
         }
-        this.file=words;
-        return words;
+
+        //set fields
+
+        this.file= words;
+        cleanedFile = words;
+
     }
+
+    //get the stopwords from txt file
+
     public void getStopWordsFromFile() throws Exception{
+
         // File path is passed as parameter
-        File file = new File(
-                "fileReader/src/stopwords.txt");
+        File file = new File("fileReader/src/stopwords.txt");
 
         // Note:  Double backquote is to avoid compiler
         // interpret words
@@ -59,6 +97,7 @@ public class readFile {
 
         // Declaring a string variable
         String st;
+
         ArrayList<String> stopWordsList= new ArrayList<String>();
         // Condition holds true till
         // there is character in a string
@@ -66,24 +105,36 @@ public class readFile {
             // Place String Into Array List
             stopWordsList.add(st);
         }
+
+        //update stopWordsList
         this.stopWords=stopWordsList;
     }
-    public ArrayList<String> removeStopWords() throws Exception {
+
+    //remove the stop words from read file
+
+    public void removeStopWords() throws Exception {
+
+        //obtain stop words from stop word txt file that will be compared.
         getStopWordsFromFile();
-        for (int i = 0; i < stopWords.size(); i++) {
-            for (int j=0; j< file.size(); j++){
-                if (stopWords.get(i).equals(file.get(j))){
-                    file.remove(j);
-                }
-            }
+
+        //clone the original ArrayList
+        this.cleanedFile=(ArrayList<String>) file.clone();
+
+        //Traverse through stop words list. If any element in cleanedfile is a stop word, it will be removed.
+        for (int j = 0; j<this.stopWords.size(); j++) {
+            cleanedFile.remove(stopWords.get(j));
+
         }
-        //System.out.println(file);
-        this.cleanedFile=file;
-        return file;
+
     }
+
+    //getStopWordFile
+
     public ArrayList<String> getStopWords(){
         return stopWords;
     }
+
+    //getter methods
 
     public ArrayList<String> getFile() {
         return file;

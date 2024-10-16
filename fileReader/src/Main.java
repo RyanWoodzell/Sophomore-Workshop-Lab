@@ -1,5 +1,4 @@
-package fileReader.src;// Java Program to Illustrate reading from
-// FileReader using FileReader class
+package fileReader.src;
 
 // Importing input output classes
 import java.io.*;
@@ -13,99 +12,56 @@ public class Main {
 
     // Main driver method
     public static void main(String[] args) throws Exception {
-        ArrayList<String> stopWords = getStopWords();
+
+        //Create file objects
+
         readFile a = new readFile();
-        ArrayList<String> textWords = a.readInstanceFile("fileReader/src/Hello World.txt");
-        ArrayList<String> removedWords = a.removeStopWords();
+        readFile b = new readFile();
+        readFile c = new readFile();
+        readFile d = new readFile();
+        readFile e = new readFile();
+        readFile f = new readFile();
+        readFile g = new readFile();
+
+        //read and clean files from their paths
+
+        ArrayList<String> electionArticle1= a.readAndClean("fileReader/src/Topic1Election/electionArticle1.txt");
+        ArrayList<String> electionArticle2 = b.readAndClean("fileReader/src/Topic1Election/electionArticle2.txt");
+        ArrayList<String> electionArticle3 = c.readAndClean("fileReader/src/Topic1Election/electionArticle3.txt");
+        ArrayList<String> olympicsArticle1 = d.readAndClean("fileReader/src/Topic2Olympics/OlympicsArticle1.txt");
+        ArrayList<String> olympicsArticle2 = e.readAndClean("fileReader/src/Topic2Olympics/OlympicArticle2.txt");
+        ArrayList<String> olympicsArticle3 = f.readAndClean("fileReader/src/Topic2Olympics/OlympicArticle3.txt");
+
+        //Gather Basic Statistics from each file
+
+        basicStatistics E1 = new basicStatistics(a.getFile(), a.getCleanedFile());
+        /*basicStatistics E2 = new basicStatistics(b.getFile(), b.getCleanedFile());
+        basicStatistics E3 = new basicStatistics(c.getFile(), c.getCleanedFile());
+        basicStatistics O4 = new basicStatistics(d.getFile(), d.getCleanedFile());
+        basicStatistics O5 = new basicStatistics(e.getFile(), e.getCleanedFile());
+        basicStatistics O6 = new basicStatistics(f.getFile(), f.getCleanedFile());
+        */
+        E1.readStatistics();
+
+        /*
+
+
+        //Read and clean imported files
+
         //frequencies(removedWords);
         //int uniqueW = uniqueWords(textWords);
         //System.out.println(uniqueW);
         //basicStatistics(readFile(), removeStopWords(stopWords, textWords), uniqueWords(removeStopWords(stopWords, textWords)));
         String[] finalWords = listToArray(removedWords);
         countFreq(finalWords, finalWords.length);
-        basicStatistics b = new basicStatistics(a.getFile(), a.getCleanedFile());
-        b.readStatistics();
+        basicStatistics z = new basicStatistics(a.getFile(), a.getCleanedFile());
+        z.readStatistics();
 
-    }
+         */
 
-    public static ArrayList<String> getStopWords() throws Exception{
-        // File path is passed as parameter
-        File file = new File(
-                "fileReader/src/stopwords.txt");
+    }}
 
-        // Note:  Double backquote is to avoid compiler
-        // interpret words
-        // like \test as \t (ie. as a escape sequence)
-
-        // Creating an object of BufferedReader class
-        BufferedReader br
-                = new BufferedReader(new FileReader(file));
-
-        // Declaring a string variable
-        String st;
-        ArrayList<String> stopWordsList= new ArrayList<String>();
-        // Condition holds true till
-        // there is character in a string
-        while ((st = br.readLine()) != null) {
-            // Place String Into Array List
-            stopWordsList.add(st);
-        }
-        return stopWordsList;
-    }
-    /*public static ArrayList<String> readFile(String filePath) throws Exception{
-        // Passing the path to the file as a parameter
-        FileReader fr = new FileReader(
-                //"C:\\Users\\ryanw\\IdeaProjects\\untitled\\src\\Hello World.txt");
-                filePath);
-        // Declaring loop variable
-        int i;
-        ArrayList<Character> cars = new ArrayList<Character>();
-        ArrayList<String> words = new ArrayList<String>();
-        ArrayList<Character> stopWordsChars = new ArrayList<Character>();
-        String word = "";
-        // Holds true till there is nothing to read
-        while ((i = fr.read()) != -1){
-
-            cars.add((char)i);
-            //System.out.print((char)i);
-            }
-        cars.add(' ');
-        for(char c: cars){
-            if ((c == ' ')||(c =='.')||(c==',')||(c==':')||(c=='?')||(c=='!')||(c==';')){
-                if ((c =='.')||(c==',')||(c==':')||(c=='?')||(c=='!')||(c==';')){
-                    continue;
-                }
-                else {
-                    words.add(word);
-                    word = "";
-                }
-            }else{
-                word = word + c;
-
-            }
-        }
-        return words;
-    }*/
-    public static ArrayList<String> removeStopWords(ArrayList<String> stopWords, ArrayList<String> words){
-        for (int i = 0; i < stopWords.size(); i++) {
-            for (int j=0; j< words.size(); j++){
-                if (stopWords.get(i).equals(words.get(j))){
-                    words.remove(j);
-                }
-            }
-        }
-        System.out.println(words);
-        return words;
-    }
-    public static int uniqueWords(ArrayList<String> words){
-        Object[] object = words.toArray();
-        //need to implement a if statement to make everything in array lowercase
-        for (int i = 0; i < object.length; i++) {
-            object[i] = object[i].toString().toLowerCase();
-        }
-        Set result = new HashSet(Arrays.asList(object));
-        return(result.size());
-    }
+    /*
     public static void countFreq(String arr[], int n) {
         boolean visited[] = new boolean[n];
 
@@ -141,3 +97,4 @@ public class Main {
 
     }
     }
+*/
