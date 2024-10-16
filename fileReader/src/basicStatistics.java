@@ -15,17 +15,11 @@ public class basicStatistics {
 
         this.withStopWords = withStopWords;
         this.withoutStopWords = withoutStopWords;
-        //countFreq(listToArray(withoutStopWords), withoutStopWords.size());
-        //frequencyCounters(cleanedArray);
 
-        /*for (int i = 0; i < cleanedArray.length; i++) {
-            System.out.println(cleanedArrayIndex[i]);
-            System.out.println(cleanedArray[i]);
-        }*/
         countStringOccurrences(listToArray(withoutStopWords));
-        for (Map.Entry<String, Integer> entry : stringCountMap.entrySet()) {
+        /*for (Map.Entry<String, Integer> entry : stringCountMap.entrySet()) {
             System.out.println(entry.getKey() + ": " + entry.getValue());
-        }
+        }*/
     }
 
     //Print out the basicStatistics of the file

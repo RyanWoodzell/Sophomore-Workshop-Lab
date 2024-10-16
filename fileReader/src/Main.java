@@ -35,13 +35,19 @@ public class Main {
         //Gather Basic Statistics from each file
 
         basicStatistics E1 = new basicStatistics(a.getFile(), a.getCleanedFile());
-        /*basicStatistics E2 = new basicStatistics(b.getFile(), b.getCleanedFile());
+        basicStatistics E2 = new basicStatistics(b.getFile(), b.getCleanedFile());
         basicStatistics E3 = new basicStatistics(c.getFile(), c.getCleanedFile());
-        basicStatistics O4 = new basicStatistics(d.getFile(), d.getCleanedFile());
-        basicStatistics O5 = new basicStatistics(e.getFile(), e.getCleanedFile());
-        basicStatistics O6 = new basicStatistics(f.getFile(), f.getCleanedFile());
-        */
+        basicStatistics O1 = new basicStatistics(d.getFile(), d.getCleanedFile());
+        basicStatistics O2 = new basicStatistics(e.getFile(), e.getCleanedFile());
+        basicStatistics O3 = new basicStatistics(f.getFile(), f.getCleanedFile());
+
         E1.readStatistics();
+        E2.readStatistics();
+        E3.readStatistics();
+        O1.readStatistics();
+        O2.readStatistics();
+        O3.readStatistics();
+
 
         /*
 
