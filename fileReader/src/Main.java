@@ -42,12 +42,14 @@ public class Main {
         basicStatistics O3 = new basicStatistics(f.getFile(), f.getCleanedFile());
 
         //output statistics to the user.
-        E1.readStatistics();
+        /*E1.readStatistics();
         E2.readStatistics();
         E3.readStatistics();
         O1.readStatistics();
         O2.readStatistics();
         O3.readStatistics();
+
+         */
 
     }}
 
