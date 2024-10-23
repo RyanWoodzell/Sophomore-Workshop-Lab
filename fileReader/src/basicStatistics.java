@@ -5,8 +5,6 @@ public class basicStatistics {
     ArrayList<String> withStopWords;
     ArrayList<String> withoutStopWords;
     int uniquewords;
-    String[] cleanedArray;
-    int[] cleanedArrayIndex;
     Map<String, Integer> stringCountMap = new HashMap<>();
     ArrayList<String> words = new ArrayList<>();
     ArrayList<Integer> ranking = new ArrayList<>();
@@ -101,7 +99,17 @@ public class basicStatistics {
                }
            }
        }
-
-
    }
+   public void topWords(int x){
+        int z=1;
+        System.out.println("Top " + x + " words: ");
+        for(int i = 0; i < x; i++){
+            System.out.println(z + ". " + words.get(i) + " occurs " + ranking.get(i) + " times");
+            z++;
+        }
+   }
+   //gives back number of words in each article
+    public void richestvocabulary() {
+        System.out.println("The number of words in the article is: " + words.size());
+    }
 }

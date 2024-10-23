@@ -12,7 +12,9 @@ public class Main {
 
     // Main driver method
     public static void main(String[] args) throws Exception {
-
+        FileReaderEJR a = new FileReaderEJR();
+        a.run();
+        /*
         //Create file objects
 
         readFile a = new readFile();
@@ -21,7 +23,6 @@ public class Main {
         readFile d = new readFile();
         readFile e = new readFile();
         readFile f = new readFile();
-        readFile g = new readFile();
 
         //read and clean files from their paths
 
@@ -41,13 +42,24 @@ public class Main {
         basicStatistics O2 = new basicStatistics(e.getFile(), e.getCleanedFile());
         basicStatistics O3 = new basicStatistics(f.getFile(), f.getCleanedFile());
 
+        E1.topWords(6);
         //output statistics to the user.
-        E1.readStatistics();
+        /*E1.readStatistics();
         E2.readStatistics();
         E3.readStatistics();
         O1.readStatistics();
         O2.readStatistics();
         O3.readStatistics();
 
+         */
+        /*
+        E1.richestvocabulary();
+        E2.richestvocabulary();
+        E3.richestvocabulary();
+        O1.richestvocabulary();
+        O2.richestvocabulary();
+        O3.richestvocabulary();
+
+         */
     }}
 
