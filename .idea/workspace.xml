@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f56bc058-8e14-43dc-a2a0-a9979b047e0f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileReader/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileReader/src/basicStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader/src/basicStatistics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileReader/src/stopwords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader/src/stopwords.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/basicStatistics.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/basicStatistics.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,22 +30,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.GFG.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.GFG.executor": "Run",
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/ryanw/IdeaProjects/DataVisualizer",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/fileReader/src" />
@@ -75,6 +72,8 @@
       <workItem from="1728418645841" duration="1731000" />
       <workItem from="1728425835091" duration="7000" />
       <workItem from="1728486224316" duration="1590000" />
+      <workItem from="1729099252860" duration="11000" />
+      <workItem from="1729173125842" duration="30000" />
     </task>
     <servers />
   </component>
