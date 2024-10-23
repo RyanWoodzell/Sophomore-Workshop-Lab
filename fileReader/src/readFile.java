@@ -106,7 +106,6 @@ public class readFile {
     public ArrayList<String> getStopWords(){
         return stopWords;
     }
-
     public ArrayList<String> getFile() {
         return file;
     }

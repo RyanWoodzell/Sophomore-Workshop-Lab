@@ -92,7 +92,7 @@ public class FileReaderEJR {
 
         }
 
-        System.out.print("Would you like to read again?");
+        System.out.print("Would you like to read again? Enter 'no' to stop.");
         String yesOrNo = sc.next();
         if(yesOrNo.equalsIgnoreCase("no")){
             running = false;
