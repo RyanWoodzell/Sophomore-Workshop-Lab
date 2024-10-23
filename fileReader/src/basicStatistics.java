@@ -108,4 +108,8 @@ public class basicStatistics {
             z++;
         }
    }
+   //gives back number of words in each article
+    public void richestvocabulary() {
+        System.out.println("The number of words in the article is: " + words.size());
+    }
 }

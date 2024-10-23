@@ -23,7 +23,6 @@ public class Main {
         readFile d = new readFile();
         readFile e = new readFile();
         readFile f = new readFile();
-        readFile g = new readFile();
 
         //read and clean files from their paths
 
@@ -53,6 +52,14 @@ public class Main {
         O3.readStatistics();
 
          */
+        /*
+        E1.richestvocabulary();
+        E2.richestvocabulary();
+        E3.richestvocabulary();
+        O1.richestvocabulary();
+        O2.richestvocabulary();
+        O3.richestvocabulary();
 
+         */
     }}
 
