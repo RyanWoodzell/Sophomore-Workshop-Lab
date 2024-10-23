@@ -1,9 +1,6 @@
-package fileReader.src;
+package fileReader.src.java;
 
 // Importing input output classes
-import java.io.*;
-import java.util.*;
-import java.util.Arrays;
 
 
 // Main class

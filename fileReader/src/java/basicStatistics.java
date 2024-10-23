@@ -1,4 +1,4 @@
-package fileReader.src;
+package fileReader.src.java;
 import java.util.*;
 
 public class basicStatistics {
@@ -112,4 +112,5 @@ public class basicStatistics {
     public void richestvocabulary() {
         System.out.println("The number of words in the article is: " + words.size());
     }
+
 }
