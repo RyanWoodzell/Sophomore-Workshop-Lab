@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class FileReaderEJR {
     public void run() throws Exception {
+        //User Interface
+        boolean running = true;
+        while(running == true){
         Scanner sc = new Scanner(System.in);
         System.out.println("Welcome to the FileReader");
         System.out.println("Would you like to read articles about 1. The Olympics or 2. The Presidential Election. (Input 1 or 2)");
@@ -40,7 +43,11 @@ public class FileReaderEJR {
                 O2.topWords(amount);
                 O3.topWords(amount);
             }
-            else if(response == 2) {}
+            else if(response == 2) {
+                O1.richestvocabulary();
+                O2.richestvocabulary();
+                O3.richestvocabulary();
+            }
             else if(response == 3) {}
 
         }
@@ -75,10 +82,22 @@ public class FileReaderEJR {
                 E2.topWords(amount);
                 E3.topWords(amount);
             }
-            else if(response == 2) {}
+            else if(response == 2) {
+                E1.richestvocabulary();
+                E2.richestvocabulary();
+                E3.richestvocabulary();
+            }
             else if(response == 3) {}
 
+
         }
+
+        System.out.print("Would you like to read again?");
+        String yesOrNo = sc.next();
+        if(yesOrNo.equalsIgnoreCase("no")){
+            running = false;
         }
+
     }
+    }}
 
