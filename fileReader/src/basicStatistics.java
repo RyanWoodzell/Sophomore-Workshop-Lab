@@ -100,7 +100,12 @@ public class basicStatistics {
            }
        }
    }
-   public void topFiveWords(){
-
+   public void topWords(int x){
+        int z=1;
+        System.out.println("Top " + x + " words: ");
+        for(int i = 0; i < x; i++){
+            System.out.println(z + ". " + words.get(i) + " occurs " + ranking.get(i) + " times");
+            z++;
+        }
    }
 }

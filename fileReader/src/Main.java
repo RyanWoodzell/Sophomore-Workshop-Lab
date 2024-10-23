@@ -12,7 +12,9 @@ public class Main {
 
     // Main driver method
     public static void main(String[] args) throws Exception {
-
+        FileReaderEJR a = new FileReaderEJR();
+        a.run();
+        /*
         //Create file objects
 
         readFile a = new readFile();
@@ -41,6 +43,7 @@ public class Main {
         basicStatistics O2 = new basicStatistics(e.getFile(), e.getCleanedFile());
         basicStatistics O3 = new basicStatistics(f.getFile(), f.getCleanedFile());
 
+        E1.topWords(6);
         //output statistics to the user.
         /*E1.readStatistics();
         E2.readStatistics();
