@@ -1,4 +1,5 @@
-package fileReader.src;
+package fileReader.src.java;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
