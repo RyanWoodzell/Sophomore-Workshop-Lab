@@ -1,116 +1,136 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
 package fileReader.src.java;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
-import java.lang.StringBuilder;
+import java.util.Iterator;
 
 public class readFile {
+    ArrayList<String> file = new ArrayList();
+    ArrayList<String> stopWords = new ArrayList();
+    ArrayList<String> cleanedFile = new ArrayList();
+    String finalText = "";
 
-    //Establish necessary fields
-
-    ArrayList<String> file = new ArrayList<>();
-    ArrayList<String> stopWords = new ArrayList<>();
-    ArrayList<String> cleanedFile = new ArrayList<>();
-
-    //Use methods to read and clean text file
-
-    public ArrayList<String> readAndClean(String filePath) throws Exception{
-        readInstanceFile(filePath);
-        removeStopWords();
-        return cleanedFile;
-
+    public readFile() {
     }
 
-    //Read file requested based on directed file path
+    public ArrayList<String> readAndClean(String filePath) throws Exception {
+        this.readInstanceFile(filePath);
+        this.removeStopWords();
+        return this.cleanedFile;
+    }
 
-    public void readInstanceFile(String filePath) throws Exception{
-
-        // Passing the path to the file as a parameter
+    public void readInstanceFile(String filePath) throws Exception {
         FileReader fr = new FileReader(filePath);
         BufferedReader br = new BufferedReader(fr);
         StringBuilder stringBuilder = new StringBuilder();
-        String line;
+        new StringBuilder();
 
-        while ((line = br.readLine()) != null){
+        String line;
+        while((line = br.readLine()) != null) {
             String cleanedLine = line.replaceAll("[^\\sa-zA-Z0-9]", "");
             stringBuilder.append(cleanedLine).append(" ");
         }
 
-        String[] wordsArray=stringBuilder.toString().split("\\s+");
+        String[] wordsArray = stringBuilder.toString().split("\\s+");
+        ArrayList<String> words = new ArrayList();
+        String[] var10 = wordsArray;
+        int var11 = wordsArray.length;
 
-        ArrayList<String> words = new ArrayList<>();
-        for (String word : wordsArray) {
+        for(int var12 = 0; var12 < var11; ++var12) {
+            String word = var10[var12];
             if (!word.isEmpty()) {
                 words.add(word.toLowerCase());
             }
         }
 
         this.file = words;
-        cleanedFile = new ArrayList<>(words);
+        this.cleanedFile = new ArrayList(words);
     }
 
-    //get the stopwords from txt file
-
-    public void getStopWordsFromFile() throws Exception{
-
-        // File path is passed as parameter
+    public void getStopWordsFromFile() throws Exception {
         File file = new File("fileReader/src/stopwords.txt");
+        BufferedReader br = new BufferedReader(new FileReader(file));
+        ArrayList<String> stopWordsList = new ArrayList();
 
-        // Note:  Double backquote is to avoid compiler
-        // interpret words
-        // like \test as \t (ie. as a escape sequence)
-
-        // Creating an object of BufferedReader class
-        BufferedReader br
-                = new BufferedReader(new FileReader(file));
-
-        // Declaring a string variable
         String st;
-
-        ArrayList<String> stopWordsList= new ArrayList<String>();
-        // Condition holds true till
-        // there is character in a string
-        while ((st = br.readLine()) != null) {
-            // Place String Into Array List
+        while((st = br.readLine()) != null) {
             stopWordsList.add(st);
         }
 
-        //update stopWordsList
-        this.stopWords=stopWordsList;
+        this.stopWords = stopWordsList;
     }
 
-    //remove the stop words from read file
-
     public void removeStopWords() throws Exception {
+        this.getStopWordsFromFile();
+        this.cleanedFile = (ArrayList)this.file.clone();
+        Iterator var1 = this.stopWords.iterator();
 
-        //obtain stop words from stop word txt file that will be compared.
-        getStopWordsFromFile();
+        while(var1.hasNext()) {
+            String stopWord = (String)var1.next();
 
-        //clone the original ArrayList
-        this.cleanedFile=(ArrayList<String>) file.clone();
-
-        //Traverse through stop words list. If any element in cleanedfile is a stop word, it will be removed.
-        for (String stopWord : this.stopWords) {
-            for (int i = 0; i < this.cleanedFile.size(); i++) {
-                cleanedFile.remove(stopWord);
+            for(int i = 0; i < this.cleanedFile.size(); ++i) {
+                this.cleanedFile.remove(stopWord);
             }
-
         }
 
     }
 
-    //getter methods
+    public void getTxt(String filePath) throws Exception {
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(filePath));
 
-    public ArrayList<String> getStopWords(){
-        return stopWords;
+            try {
+                StringBuilder sb = new StringBuilder();
+
+                while(true) {
+                    String line;
+                    if ((line = br.readLine()) == null) {
+                        String fileContent = sb.toString();
+                        this.finalText = fileContent;
+                        break;
+                    }
+
+                    sb.append(line);
+                }
+            } catch (Throwable var7) {
+                try {
+                    br.close();
+                } catch (Throwable var6) {
+                    var7.addSuppressed(var6);
+                }
+
+                throw var7;
+            }
+
+            br.close();
+        } catch (IOException var8) {
+            IOException e = var8;
+            System.err.println("Error reading the file: " + e.getMessage());
+        }
+
+    }
+
+    public ArrayList<String> getStopWords() {
+        return this.stopWords;
     }
 
     public ArrayList<String> getFile() {
-        return file;
+        return this.file;
     }
-    public ArrayList<String> getCleanedFile(){
-        return cleanedFile;
+
+    public ArrayList<String> getCleanedFile() {
+        return this.cleanedFile;
+    }
+
+    public String getOriginalFile() {
+        return this.finalText;
     }
 }

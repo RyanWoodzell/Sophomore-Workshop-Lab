@@ -7,7 +7,7 @@ public class FileReaderEJR {
     public void run() throws Exception {
         //User Interface
         boolean running = true;
-        while(running == true){
+        while(running){
         Scanner sc = new Scanner(System.in);
         System.out.println("Welcome to the FileReader");
         System.out.println("Would you like to read articles about 1. The Olympics or 2. The Presidential Election. (Input 1 or 2)");
@@ -21,7 +21,7 @@ public class FileReaderEJR {
             readFile f = new readFile();
 
             //Read all olympic files and clean
-
+            d.getTxt("fileReader/src/Topic2Olympics/OlympicsArticle1.txt");
             ArrayList<String> olympicsArticle1 = d.readAndClean("fileReader/src/Topic2Olympics/OlympicsArticle1.txt");
             ArrayList<String> olympicsArticle2 = e.readAndClean("fileReader/src/Topic2Olympics/OlympicArticle2.txt");
             ArrayList<String> olympicsArticle3 = f.readAndClean("fileReader/src/Topic2Olympics/OlympicArticle3.txt");
@@ -49,7 +49,20 @@ public class FileReaderEJR {
                 O2.richestvocabulary();
                 O3.richestvocabulary();
             }
-            else if(response == 3) {}
+            else if(response == 3) {
+                System.out.println("Would you like to analyze article 1, 2, or 3: ");
+                response = sc.nextInt();
+                if(response == 1) {
+                    O1.sentimentAnalysis(d.getOriginalFile());
+                }
+                else if(response == 2) {
+                    O2.sentimentAnalysis(d.getOriginalFile());
+                }
+                else if(response == 3) {
+                    O3.sentimentAnalysis(d.getOriginalFile());
+                }
+
+            }
 
         }
         if(response == 2) {
