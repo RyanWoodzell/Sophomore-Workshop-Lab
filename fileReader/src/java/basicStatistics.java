@@ -119,7 +119,7 @@ public class basicStatistics {
         System.out.println("The number of words in the article is: " + words.size());
     }
 
-    public void sentimentAnalysis(String text, String title) {
+    public void sentimentAnalysis(String text) {
 
         // Create a pipeline with sentiment analysis
         ArrayList<String> sentiments = new ArrayList<>();
@@ -157,19 +157,19 @@ public class basicStatistics {
 
         //mostly neutral
         if ((neutralCount > positiveCount) && (neutralCount > negativeCount)) {
-            System.out.println(title + " sentiment analysis. The article is mostly Neutral. ");
+            System.out.println(" sentiment analysis. The article is mostly Neutral. ");
             System.out.println("Neutral sentences: " + neutralCount + " Positive sentences: " + positiveCount + " Negative sentences: " + negativeCount);
         }
 
         //mostly positive
         if ((positiveCount > negativeCount) && (positiveCount > neutralCount)) {
-            System.out.println(title + " sentiment analysis. The article is mostly Positive ");
+            System.out.println(" sentiment analysis. The article is mostly Positive ");
             System.out.println("Positive sentences: " + positiveCount + " Negative sentences: " + negativeCount + " Neutral sentences: " + neutralCount);
         }
 
         //mostly negative
         if ((negativeCount > positiveCount) && (negativeCount > neutralCount)) {
-            System.out.println(title + " sentiment analysis. The article is mostly Negative. ");
+            System.out.println(" sentiment analysis. The article is mostly Negative. ");
             System.out.println("Negative sentences: " + negativeCount + " Neutral sentences: " + positiveCount + " Positive sentences: " + neutralCount);
         }
     }
