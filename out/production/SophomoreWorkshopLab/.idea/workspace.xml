@@ -5,10 +5,76 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f56bc058-8e14-43dc-a2a0-a9979b047e0f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/stanford_corenlp_4_5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SophomoreWorkshopLab.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SophomoreWorkshopLab.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/.idea/SophomoreWorkshopLab.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/.idea/SophomoreWorkshopLab.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/CoreNLP-to-HTML.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/LIBRARY-LICENSES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/RESOURCE-LICENSES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/SemgrexDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/ShiftReduceDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/StanfordCoreNlpDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/StanfordDependenciesManual.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/corenlp.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/input.txt.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/input.txt.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/patterns/example.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/patterns/goldnames.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/patterns/goldplaces.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/patterns/names.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/patterns/otherpeople.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/patterns/places.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/patterns/presidents.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/patterns/stopwords.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/pom-java-11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/pom-java-17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/sample-project-pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/sutime/british.sutime.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/sutime/defs.sutime.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/sutime/english.holidays.sutime.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/sutime/english.sutime.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/sutime/spanish.sutime.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/tokensregex/color.input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/tokensregex/color.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/tokensregex/color.rules.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/tokensregex/retokenize.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/CoreNLP-to-HTML.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/LIBRARY-LICENSES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/RESOURCE-LICENSES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/StanfordDependenciesManual.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/corenlp.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/input.txt.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/input.txt.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/patterns/example.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/patterns/goldnames.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/patterns/goldplaces.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/patterns/names.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/patterns/otherpeople.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/patterns/places.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/patterns/presidents.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/patterns/stopwords.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/pom-java-11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/pom-java-17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/sample-project-pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/sutime/british.sutime.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/sutime/defs.sutime.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/sutime/english.holidays.sutime.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/sutime/english.sutime.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/sutime/spanish.sutime.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/tokensregex/color.input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/tokensregex/color.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/tokensregex/color.rules.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/nlpLib/stanford-corenlp-4.5.7/stanford-corenlp-4.5.7/tokensregex/retokenize.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,18 +91,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;RyanWoodzell&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/RyanWoodzell/SophomoreWorkshopLab.git&quot;,
-    &quot;accountId&quot;: &quot;fd6aaab1-f7a7-487d-9e4e-20ed637a0705&quot;
-  }
-}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -63,15 +117,16 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ryanw\OneDrive\Documents\GitHub\SophomoreWorkshopLab\fileReader\src\nlpLib" />
       <recent name="$PROJECT_DIR$/fileReader/src" />
+      <recent name="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7" />
+      <recent name="$PROJECT_DIR$/fileReader/src/nlpLib" />
     </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
       </set>
     </attachedChunks>
   </component>
@@ -87,9 +142,7 @@
       <workItem from="1728418645841" duration="1731000" />
       <workItem from="1728425835091" duration="7000" />
       <workItem from="1728486224316" duration="1590000" />
-      <workItem from="1729699288513" duration="612000" />
-      <workItem from="1730382096302" duration="42000" />
-      <workItem from="1730906987520" duration="395000" />
+      <workItem from="1730909171844" duration="981000" />
     </task>
     <servers />
   </component>
