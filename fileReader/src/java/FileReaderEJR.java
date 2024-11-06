@@ -36,7 +36,7 @@ public class FileReaderEJR {
             System.out.println("Select 1/2/3 : ");
             response = sc.nextInt();
             if(response == 1) {
-                System.out.println("What amount of prevelent words would you like to see(integer):");
+                System.out.println("What amount of prevalent words would you like to see(integer):");
                 int amount = sc.nextInt();
 
                 //Richest Vocab
