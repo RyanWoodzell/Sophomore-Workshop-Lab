@@ -2,7 +2,7 @@
 .idea/libraries/stanford_corenlp_4_5.xml
 .idea/libraries/stanford_corenlp_4_5.xml
 .idea/SophomoreWorkshopLab.iml
-.idea/workspace.xml
+
 fileReader/src/java/basicStatistics.java
 fileReader/src/stanford-corenlp-4.5.7/build.xml
 fileReader/src/stanford-corenlp-4.5.7/CoreNLP-to-HTML.xsl
