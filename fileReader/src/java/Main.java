@@ -9,6 +9,7 @@ public class Main {
 
     // Main driver method
     public static void main(String[] args) throws Exception {
+
         FileReaderEJR a = new FileReaderEJR();
         a.run();
 
