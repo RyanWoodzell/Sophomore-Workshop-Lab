@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f56bc058-8e14-43dc-a2a0-a9979b047e0f" name="Changes" comment="" />
+    <list default="true" id="f56bc058-8e14-43dc-a2a0-a9979b047e0f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/java/FileReaderEJR.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader/src/java/FileReaderEJR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/src/java/basicStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader/src/java/basicStatistics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/java/FileReaderEJR.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/java/FileReaderEJR.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/java/basicStatistics.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/java/basicStatistics.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,6 +55,8 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/fileReader/src" />
+      <recent name="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7" />
+      <recent name="$PROJECT_DIR$/fileReader/src/nlpLib" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -69,8 +79,8 @@
       <workItem from="1728418645841" duration="1731000" />
       <workItem from="1728425835091" duration="7000" />
       <workItem from="1728486224316" duration="1590000" />
-      <workItem from="1729699288513" duration="612000" />
-      <workItem from="1730300728245" duration="4168000" />
+      <workItem from="1730909171844" duration="981000" />
+      <workItem from="1731189601761" duration="2994000" />
     </task>
     <servers />
   </component>

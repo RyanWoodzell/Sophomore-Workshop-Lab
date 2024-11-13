@@ -157,20 +157,41 @@ public class basicStatistics {
 
         //mostly neutral
         if ((neutralCount > positiveCount) && (neutralCount > negativeCount)) {
-            System.out.println(" sentiment analysis. The article is mostly Neutral. ");
+            System.out.println("Sentiment analysis. The article is mostly Neutral. ");
             System.out.println("Neutral sentences: " + neutralCount + " Positive sentences: " + positiveCount + " Negative sentences: " + negativeCount);
         }
 
         //mostly positive
-        if ((positiveCount > negativeCount) && (positiveCount > neutralCount)) {
-            System.out.println(" sentiment analysis. The article is mostly Positive ");
+        else if ((positiveCount > negativeCount) && (positiveCount > neutralCount)) {
+            System.out.println("Sentiment analysis. The article is mostly Positive ");
             System.out.println("Positive sentences: " + positiveCount + " Negative sentences: " + negativeCount + " Neutral sentences: " + neutralCount);
         }
 
         //mostly negative
-        if ((negativeCount > positiveCount) && (negativeCount > neutralCount)) {
-            System.out.println(" sentiment analysis. The article is mostly Negative. ");
+        else if ((negativeCount > positiveCount) && (negativeCount > neutralCount)) {
+            System.out.println("Sentiment analysis. The article is mostly Negative. ");
             System.out.println("Negative sentences: " + negativeCount + " Neutral sentences: " + positiveCount + " Positive sentences: " + neutralCount);
         }
+        //equally neutral and positive but greater than negative
+        else if ((neutralCount == positiveCount) && (neutralCount > negativeCount)) {
+            System.out.println("Sentiment analysis. The article is equally Neutral and Positive. ");
+            System.out.println("Neutral sentences: " + neutralCount + " Positive sentences: " + positiveCount + " Negative sentences: " + negativeCount);
+        }
+        //equally neutral and negative but greater than positve
+        else if ((neutralCount > positiveCount) && (neutralCount == negativeCount)) {
+            System.out.println("Sentiment analysis. The article is equally Neutral and Negaitve. ");
+            System.out.println("Neutral sentences: " + neutralCount + " Negative sentences:" + negativeCount + " Positive sentences: " + positiveCount);
+        }
+        //equally positive and negative but greater than neutral
+        else if ((positiveCount == negativeCount) && (positiveCount > neutralCount)) {
+            System.out.println("Sentiment analysis. The article is equally Positive and Negative. ");
+            System.out.println(" Positive sentences: " + positiveCount + " Negative sentences:" + negativeCount + "Neutral sentences: " + neutralCount);
+        }
+        //equally neutral, positive, and negative but greater than negative
+        else if ((negativeCount == positiveCount) && (negativeCount == neutralCount)) {
+            System.out.println("Sentiment analysis. The article is equally Positive, Negative, and Neutral. ");
+            System.out.println("Negative sentences: " + negativeCount + " Neutral sentences: " + positiveCount + " Positive sentences: " + neutralCount);
+        }
+
     }
 }
