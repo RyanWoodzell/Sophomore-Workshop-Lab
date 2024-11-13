@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Welcome to ");
+        System.out.println("Welcome");
 
         boolean running = true;
         while (running) {
