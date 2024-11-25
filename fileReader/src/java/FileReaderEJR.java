@@ -21,12 +21,12 @@ public class FileReaderEJR {
             readFile f = new readFile();
 
             //Read all olympic files and clean
-            d.getTxt("fileReader/src/Topic2Olympics/OlympicsArticle1.txt");
-            e.getTxt("fileReader/src/Topic2Olympics/OlympicArticle2.txt");
-            f.getTxt("fileReader/src/Topic2Olympics/OlympicArticle3.txt");
-            ArrayList<String> olympicsArticle1 = d.readAndClean("fileReader/src/Topic2Olympics/OlympicsArticle1.txt");
-            ArrayList<String> olympicsArticle2 = e.readAndClean("fileReader/src/Topic2Olympics/OlympicArticle2.txt");
-            ArrayList<String> olympicsArticle3 = f.readAndClean("fileReader/src/Topic2Olympics/OlympicArticle3.txt");
+            d.getTxt("fileReader/newTopics/olympics/OlympicsArticle1.txt");
+            e.getTxt("fileReader/newTopics/olympics/OlympicArticle2.txt");
+            f.getTxt("fileReader/newTopics/olympics/OlympicArticle3.txt");
+            ArrayList<String> olympicsArticle1 = d.readAndClean("fileReader/newTopics/olympics/OlympicsArticle1.txt");
+            ArrayList<String> olympicsArticle2 = e.readAndClean("fileReader/newTopics/olympics/OlympicArticle2.txt");
+            ArrayList<String> olympicsArticle3 = f.readAndClean("fileReader/newTopics/olympics/OlympicArticle3.txt");
 
             //Gather Basic Statistics for each article
 
@@ -84,12 +84,12 @@ public class FileReaderEJR {
             readFile c = new readFile();
 
             //Read and clean all election files.
-                a.getTxt("fileReader/src/Topic1Election/electionArticle1.txt");
-                b.getTxt("fileReader/src/Topic1Election/electionArticle2.txt");
-                c.getTxt("fileReader/src/Topic1Election/electionArticle3.txt");
-            ArrayList<String> electionArticle1 = a.readAndClean("fileReader/src/Topic1Election/electionArticle1.txt");
-            ArrayList<String> electionArticle2 = b.readAndClean("fileReader/src/Topic1Election/electionArticle2.txt");
-            ArrayList<String> electionArticle3 = c.readAndClean("fileReader/src/Topic1Election/electionArticle3.txt");
+                a.getTxt("fileReader/newTopics/election/electionArticle1.txt");
+                b.getTxt("fileReader/newTopics/election/electionArticle2.txt");
+                c.getTxt("fileReader/newTopics/election/electionArticle3.txt");
+            ArrayList<String> electionArticle1 = a.readAndClean("fileReader/newTopics/election/electionArticle1.txt");
+            ArrayList<String> electionArticle2 = b.readAndClean("fileReader/newTopics/election/electionArticle2.txt");
+            ArrayList<String> electionArticle3 = c.readAndClean("fileReader/newTopics/election/electionArticle3.txt");
 
             //Gather basic statistics about election files
             basicStatistics E1 = new basicStatistics(a.getFile(), a.getCleanedFile());
