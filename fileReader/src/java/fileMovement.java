@@ -18,7 +18,7 @@ public class fileMovement {
         String folderName = scan.next();
 
         //create the path to the new folder
-        String folderPath = "fileReader/newTopics/"; // The path where you want to create the folder
+        String folderPath = "fileReader/allTopics/"; // The path where you want to create the folder
         folderPath = folderPath + folderName;
 
         //create new file
@@ -74,14 +74,14 @@ public class fileMovement {
         if (addOrMove.equals("move")) {
 
             //retrieve name of folder
-            System.out.println("Enter the name of the folder you would like to add an article in:");
+            System.out.println("Enter the name of the folder you would like to move an article in:");
             String folderName = scanner.next();
 
             //check if folder exists to prevent error
             if(checkIfFolderExists(folderName)){
 
                 //create new path and move file
-                String articlePath = "fileReader/newTopics/";
+                String articlePath = "fileReader/allTopics/";
                 articlePath = articlePath + folderName;
                 moveFile(articlePath);
 
@@ -94,13 +94,13 @@ public class fileMovement {
         }else if (addOrMove.equals("add")) {
 
             //retrieve name of folder
-            System.out.println("Enter the name of the folder you would like to move an article in:");
+            System.out.println("Enter the name of the folder you would like to add an article in:");
             String folderName = scanner.next();
 
             //check if folder exists
             if(checkIfFolderExists(folderName)){
 
-                String articlePath = "fileReader/newTopics/";
+                String articlePath = "fileReader/allTopics/";
                 articlePath = articlePath + folderName;
                 createTxtFile(articlePath);
 
@@ -164,7 +164,7 @@ public class fileMovement {
     //method to check if folder is existing to prevent error.
     public boolean checkIfFolderExists(String folderName) {
 
-        String folderPath = "fileReader/newTopics/";
+        String folderPath = "fileReader/allTopics/";
         folderPath = folderPath + folderName;
 
         File folder = new File(folderPath);
