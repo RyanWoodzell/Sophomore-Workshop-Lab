@@ -27,6 +27,7 @@ public class FileReaderEJR {
                 getfilename = filesc.nextLine();
                 if(getfilename.equalsIgnoreCase("yes")){
                     System.out.println("Enter article name: ");
+
                     String fname = filesc.nextLine();
                     filenames.add("fileReader/allTopics/" + folderName + "/" + fname + ".txt");
                 }

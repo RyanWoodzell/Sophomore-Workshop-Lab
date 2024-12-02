@@ -6,12 +6,27 @@
   <component name="ChangeListManager">
     <list default="true" id="f56bc058-8e14-43dc-a2a0-a9979b047e0f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/newTopics/election/chicken.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/newTopics/election/electionArticle1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader/allTopics/election/electionArticle1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/newTopics/election/electionArticle2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader/allTopics/election/electionArticle2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/newTopics/election/electionArticle3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader/allTopics/election/electionArticle3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/newTopics/electionchicken.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/newTopics/olympics/OlympicArticle2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader/allTopics/olympics/olympicsArticle2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/newTopics/olympics/OlympicArticle3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader/allTopics/olympics/olympicsArticle3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader/newTopics/olympics/OlympicsArticle1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader/allTopics/olympics/olympicsArticle1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fileReader/src/java/FileReaderEJR.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader/src/java/FileReaderEJR.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fileReader/src/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader/src/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fileReader/src/java/fileMovement.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader/src/java/fileMovement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/java/FileReaderEJR.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/java/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/newTopics/election/chicken.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/newTopics/election/electionArticle1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/newTopics/election/electionArticle2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/newTopics/election/electionArticle3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/newTopics/electionchicken.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/newTopics/olympics/OlympicArticle2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/newTopics/olympics/OlympicArticle3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/newTopics/olympics/OlympicsArticle1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/java/FileReaderEJR.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/java/FileReaderEJR.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/java/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/java/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/java/fileMovement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SophomoreWorkshopLab/fileReader/src/java/fileMovement.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,6 +83,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/fileReader/newTopics/olympics" />
       <recent name="$PROJECT_DIR$/fileReader/src" />
       <recent name="$PROJECT_DIR$/fileReader/src/nlpLib/stanford-corenlp-4.5.7" />
       <recent name="$PROJECT_DIR$/fileReader/src/nlpLib" />
@@ -99,10 +115,22 @@
       <workItem from="1731515473714" duration="83000" />
       <workItem from="1732118722713" duration="6255000" />
       <workItem from="1732502087581" duration="198000" />
+      <workItem from="1732557979717" duration="16298000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -32,7 +32,7 @@ public class fileMovement {
         }
 
         //close scanner
-        scan.close();
+
     }
 
 
@@ -57,7 +57,7 @@ public class fileMovement {
         } catch (IOException e) {
             System.out.println("Error moving file: " + e.getMessage());
         }
-        scan.close();
+
     }
 
 
@@ -102,7 +102,7 @@ public class fileMovement {
 
                 String articlePath = "fileReader/allTopics/";
                 articlePath = articlePath + folderName;
-                createTxtFile(articlePath);
+                createTxtFile(articlePath, scanner);
 
             }else{
 
@@ -113,12 +113,11 @@ public class fileMovement {
         }
 
         //scanner close
-        scanner.close();
 
         }
 
     //create TxtFile
-    public void createTxtFile(String articlePath){
+    public void createTxtFile(String articlePath, Scanner scanner){
 
         Scanner sc = new Scanner (System.in);
 
@@ -130,7 +129,7 @@ public class fileMovement {
         articlePath = articlePath + ".txt";
 
         //read each input line by line, exiting when the user types exit.
-        try (Scanner scanner = new Scanner(System.in);
+        try (
 
              FileWriter writer = new FileWriter(articlePath)) {
 
@@ -158,7 +157,6 @@ public class fileMovement {
 
         }
 
-        sc.close();
     }
 
     //method to check if folder is existing to prevent error.
