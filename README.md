@@ -65,7 +65,9 @@ Key Methods:
 
 ## FileReaderEJR class
 Our FileReaderEJR class manages the user interface and handles the selection of articles and analysis options.
-
+- ```run()```: this runs the analytical part of our program. It reads the files and produces user selected data.
+- ```analyzeArticles(String folderPath, ArrayList fileNames)```: Takes the gathered arrayList of filepaths, and analyzes each article in the list
+- ```checkIfFolderExists(String folderName)```: Checks if the user input for foldername is valid and exists.
 ### fileMovement Class
 Our fileMovement class amnages file movement for creating new topcis and adding/creating new articles. 
 
