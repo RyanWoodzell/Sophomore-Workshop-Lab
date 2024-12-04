@@ -81,7 +81,8 @@ Key Methods:
 ## UML
 
 
-![Screenshot 2024-11-06 200826](https://github.com/user-attachments/assets/7cfef989-f80b-4ee5-b779-26a680c4e6fa)
+![image](https://github.com/user-attachments/assets/663357bc-2f95-40d5-bf4f-e7cb1440762e)
+
 
 ## Testing of Newest Milestone
 
