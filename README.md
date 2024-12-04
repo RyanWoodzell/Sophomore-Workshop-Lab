@@ -66,18 +66,6 @@ Key Methods:
 ### FileReaderEJR class
 Our FileReaderEJR class manages the user interface and handles the selection of articles and analysis options.
 
-- ```run()```: this runs the analytical part of our program. It reads the files and produces user selected data.
-- ```analyzeArticles(String folderPath, ArrayList fileNames)```: Takes the gathered arrayList of filepaths, and analyzes each article in the list
-- ```checkIfFolderExists(String folderName)```: Checks if the user input for foldername is valid and exists.
-### fileMovement Class
-Our fileMovement class amnages file movement for creating new topcis and adding/creating new articles. 
-
-- ```createFolder()```: Creates a folder(new topic) for the user to input new articles
-- ```moveFile(String desiredPath)```: Moves a file from the desired filepath into the desired folder
-- ```addArticle(String desiredPath)```: Gives the user the option to move an article from their device or to input a text article by hand in the terminal.
-- ```createTxtFile(String articlePath, Scanner scanner)```: Allows the user to input an article manually. It records each line in the terminal until the user inputs a line with just "exit"
-- ```checkIfFolderExists(String folderName)```: Checks if desired folder exists already, returns a boolean. 
-
 Key Features: 
 
 - Reads articles from Olympics and Election topics.
@@ -85,8 +73,27 @@ Key Features:
 - Allows the user to specify how many top words they want to see or which article they want to analyze for sentiment.
 
 Key Methods: 
+- ```run()```: this runs the analytical part of our program. It reads the files and produces user selected data.
+- ```analyzeArticles(String folderPath, ArrayList fileNames)```: Takes the gathered arrayList of filepaths, and analyzes each article in the list
+- ```checkIfFolderExists(String folderName)```: Checks if the user input for foldername is valid and exists.
 
-- ```run```: The main method that initiates the user interface, reads the articles, and performs analysis based on user input.
+  
+### fileMovement Class
+Our fileMovement class amnages file movement for creating new topcis and adding/creating new articles. 
+
+Key features: Moves and creates files for the user to analyze new articles.
+
+Key Methods
+- ```createFolder()```: Creates a folder(new topic) for the user to input new articles
+- ```moveFile(String desiredPath)```: Moves a file from the desired filepath into the desired folder
+- ```addArticle(String desiredPath)```: Gives the user the option to move an article from their device or to input a text article by hand in the terminal.
+- ```createTxtFile(String articlePath, Scanner scanner)```: Allows the user to input an article manually. It records each line in the terminal until the user inputs a line with just "exit"
+- ```checkIfFolderExists(String folderName)```: Checks if desired folder exists already, returns a boolean. 
+
+
+
+
+
 
 
 
