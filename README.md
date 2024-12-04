@@ -38,6 +38,8 @@ Key Features:
 ### readFile Class
 Our readFile class uses several methods to read the text file and clean its content by removing punctuation and stop words. This prepares our text for further analysis.
 
+Key Features: Reads a txt file and converts it into String or ArrayList.
+
 Key Methods: 
 - ```readAndClean(String filePath)```: Reads the file at the specified path, cleans the text, and removes stop words. Returns the cleaned content as an ```ArrayList<String>```.    
 - ```getStopWordsFromFile()```: Reads stop words from a predefined file ```(stopwords.txt)``` and stores them in an ```ArrayList<String>```.  
@@ -46,6 +48,8 @@ Key Methods:
 
 ### basicStatistics Class
 Our basicStatistics Class analyzes the words from the articles and provides statistics on the word frequency and unique word count.
+
+Key Features: Gathers various basic statistics on each selected txt file. 
 
 Key Methods: 
 - ```basicStatistics(ArrayList<String> withStopWords, ArrayList<String> withoutStopWords)```: Constructor that initializes the object with two lists: one containing all words (including stop words) and the other containing only the cleaned words.  
