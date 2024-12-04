@@ -63,9 +63,9 @@ Key Methods:
 - ```sentimentAnalysis(String text)```: Analyzes the sentiment of the text ranging from positive, neutral, or negative using Stanford CoreNLP.
 
 
-## FileReaderEJR class
-
+### FileReaderEJR class
 Our FileReaderEJR class manages the user interface and handles the selection of articles and analysis options.
+
 - ```run()```: this runs the analytical part of our program. It reads the files and produces user selected data.
 - ```analyzeArticles(String folderPath, ArrayList fileNames)```: Takes the gathered arrayList of filepaths, and analyzes each article in the list
 - ```checkIfFolderExists(String folderName)```: Checks if the user input for foldername is valid and exists.
