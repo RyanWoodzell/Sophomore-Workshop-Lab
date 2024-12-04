@@ -1,3 +1,27 @@
+# Sophomore Workshop Lab
+
+## Table of Contents
+
+1. [Introduction](#introduction)  
+2. [Milestone 1](#milestone-1)  
+3. [Milestone 2](#milestone-2)  
+4. [Milestone 3](#milestone-3)  
+5. [Refactoring](#refactoring)  
+6. [Group Members](#group-members)  
+7. [Installation](#installation)  
+8. [Classes](#classes)  
+    - [Main Class](#main-class)  
+    - [readFile Class](#readfile-class)  
+    - [basicStatistics Class](#basicstatistics-class)  
+    - [FileReaderEJR Class](#filereaderejr-class)  
+    - [fileMovement Class](#filemovement-class)  
+9. [UML Diagram](#uml)  
+10. [Example Run](#example-run)  
+
+
+## Introduction
+
+This project is a software application designed to analyze articles by processing their text, removing stop words, calculating statistics, ranking word frequencies, and assessing sentiment. Users can create topics, add articles, and perform analyses on them.
 # Milestone 1
 
 In Milestone 1, we created a software application that processes an article, removes the stop words, calculates basic statistics, and ranks words by frequencies. We found three different articles for two different news topics, for a total of six articles.
