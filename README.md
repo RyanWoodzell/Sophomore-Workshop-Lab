@@ -31,8 +31,7 @@ Erin Goodling, Ryan Woodzell, and Jack Callanan: Computer Science majors at Fair
 Our Main class is the entry point for our program. It initializes the user interface and prompts the user to select which articles to analyze and what type of analysis to run. 
 
 Key Features: 
-- Prompts the user to chose between articles on the Olympics or Presidential Election.
-- Provides options for performing an analysis, such as richest vocabulary, top word frequency ranking, or sentiment analysis.
+- Prompts the user to choose between analyzing articles, creating a new topic, adding an article, or exiting the program. 
 
 
 ### readFile Class
