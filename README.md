@@ -15,6 +15,15 @@ In Milestone 3, we added the fileMovement class, allowing the user to create new
 
 ## Refactoring
 
+### Main:
+We can refactor this code by incorporating a new method that prints the user options and a new method that will ask for user input. Rather than printing multiple options every time the while loop re-runs, we can instead put the user options in a method and just call the method. This will make the code within the while loop easier to read and more concise. Additionally, we can apply a similar change for the scanner class where we gather the user input whenever a method is called. This will also make the code easier to read and more concise.
+
+### fileMovement:
+One way to refactor this class is by modifying the addArticle. One change we can make to this method is to separate it into two methods including addArticle and moveArticle. This would decrease coupling making it easier for us to update our program in the future. Currently, the addArticle method is used for both, which can be confusing when reading/debugging our code. A different way to change the method is by removing duplicate code. Currently, we utilize the checkIfFolderExists method multiple times within the addArticle method. Instead, we can reorder the code to move the checkIfFolderExists method before the if/else if statements so we only have to call it once.
+
+### basicStatistics:
+One way to refactor this class is by updating the methods that used for loops. Instead of using for loops, we can incorporate streams which is a cleaner and easier-to-maintain alternative to for loops. An additional change we can make to this class is modifying the if/else if block used to determine the sentiment of the article. This code is very redundant so rather than printing "Sentiment analysis. The article is mostly SENTIMENT. ", we can instead make a singular method to analyze and print the sentiment for us. 
+
 --
 ## Group Members
 
