@@ -24,6 +24,12 @@ One way to refactor this class is by modifying the addArticle. One change we can
 ### basicStatistics:
 One way to refactor this class is by updating the methods that used for loops. Instead of using for loops, we can incorporate streams which is a cleaner and easier-to-maintain alternative to for loops. An additional change we can make to this class is modifying the if/else if block used to determine the sentiment of the article. This code is very redundant so rather than printing "Sentiment analysis. The article is mostly SENTIMENT. ", we can instead make a singular method to analyze and print the sentiment for us. 
 
+### FileReader
+Right now, our FileReader class has high coupling because it interacts with many different parts of the code. If we want to change one aspect of the program, we will likely have to modify the entire class. We could separate the logic of our FileReader class into multiple classes with distinct functions. For example, we could separate the logic for scanning user input. We could call it something like UserHandler, and this class would only gather user input and return the appropriate values. Making this change would reduce coupling, making our code easier to test and modify. 
+
+### readFile
+In our readFile class, we have some methods with overlapping code. For example, our getTxt and readInstanceFile methods are both reading the file line by line. To eliminate redundancy, we could convert these two methods into one. Our updated method would read the file line by line and return the content as a string or list of words. This would improve our cohesion because there is one central responsibility of our new method. This would also make the class easier to maintain, update, and debug.
+
 --
 ## Group Members
 
