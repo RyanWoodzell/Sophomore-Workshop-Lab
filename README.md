@@ -1,10 +1,21 @@
-# Milestone 2
+# Milestone 1
 
-In Milestone 1, we created a software application that processes an article, removes the stop words, calculates basic statistics, and ranks words by frequencies. We found three different articles for two different news topics, for a total of six articles. In Milestone 2, we implemented heuristics that address the following questions: 
+In Milestone 1, we created a software application that processes an article, removes the stop words, calculates basic statistics, and ranks words by frequencies. We found three different articles for two different news topics, for a total of six articles.
+
+# Milestone 2
+ 
+In Milestone 2, we implemented heuristics that address the following questions: 
 1. Which article used the richest vocabulary?
 2. What is the list of words that were repeated the most per each article?
 3. Which one expressed a "positive attitude" vs a "negative attitude"?
 
+# Milestone 3
+
+In Milestone 3, we added the fileMovement class, allowing the user to create new topics and add their own articles into our program. They can eithe transfer an article from their computer, or type it right into the terminal. We also updated the user interface to be more practical for the user.
+
+## Refactoring
+
+--
 ## Group Members
 
 Erin Goodling, Ryan Woodzell, and Jack Callanan: Computer Science majors at Fairfield University
